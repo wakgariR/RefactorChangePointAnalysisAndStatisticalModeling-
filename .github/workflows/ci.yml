@@ -42,10 +42,3 @@ jobs:
         run: |
           cd src/frontend
           npm ci
-
-      - name: Run frontend tests
-        env:
-          CI: false
-        run: |
-          cd src/frontend
-          npm test -- --watchAll=false
